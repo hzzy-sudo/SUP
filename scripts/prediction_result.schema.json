@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["ok", "blocked"]
+    },
+    "expert_name": {
+      "type": "string"
+    },
+    "lottery_name": {
+      "type": "string"
+    },
+    "issue_no": {
+      "type": "string"
+    },
+    "used_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_or_uncertain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "markdown": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "expert_name",
+    "lottery_name",
+    "issue_no",
+    "used_sources",
+    "missing_or_uncertain",
+    "markdown"
+  ],
+  "additionalProperties": false
+}
